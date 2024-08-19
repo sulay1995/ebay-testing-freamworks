@@ -1,13 +1,13 @@
-import * as React from 'react';
-import Dialog, { DialogProps } from '@mui/material/Dialog';
-import DialogActions from '@mui/material/DialogActions';
-import DialogContent from '@mui/material/DialogContent';
-import DialogContentText from '@mui/material/DialogContentText';
-import DialogTitle from '@mui/material/DialogTitle';
-import Button from '@mui/material/Button';
-import CloseIcon from '@mui/icons-material/Close';
-import { styled } from '@mui/material';
-import './model.module.css';
+import * as React from "react";
+import Dialog, { DialogProps } from "@mui/material/Dialog";
+import DialogActions from "@mui/material/DialogActions";
+import DialogContent from "@mui/material/DialogContent";
+import DialogContentText from "@mui/material/DialogContentText";
+import DialogTitle from "@mui/material/DialogTitle";
+import Button from "@mui/material/Button";
+import CloseIcon from "@mui/icons-material/Close";
+import { styled } from "@mui/material";
+import "./model.module.css";
 
 export interface ModelInterface extends DialogProps {
   modelHeader: boolean;
@@ -54,7 +54,7 @@ const Model: React.FC<ModelInterface> = ({
           <DialogTitle id="alert-dialog-title">
             {props.title}
             <Button
-              style={{ float: 'right' }}
+              style={{ float: "right" }}
               onClick={handleClose}
               data-testid="close"
             >
@@ -62,7 +62,7 @@ const Model: React.FC<ModelInterface> = ({
             </Button>
           </DialogTitle>
         ) : (
-          ''
+          ""
         )}
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
@@ -76,7 +76,7 @@ const Model: React.FC<ModelInterface> = ({
             </Button>
           </DialogActions>
         ) : (
-          ''
+          ""
         )}
       </ModelMail>
     </div>
